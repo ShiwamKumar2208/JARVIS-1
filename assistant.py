@@ -6,6 +6,7 @@ import speech_recognition as sr
 import wikipedia
 import datetime
 import wolframalpha
+from datetime import date
 import os
 import sys
 
@@ -66,6 +67,9 @@ if __name__ == '__main__':
         if 'open youtube' in query:
             speak('okay')
             webbrowser.open('www.youtube.com')
+
+        elif 'todays date' in query:
+            print(date.today())
 
         elif 'open google' in query:
             speak('okay')
